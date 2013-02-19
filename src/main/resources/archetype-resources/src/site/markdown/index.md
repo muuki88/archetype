@@ -1,1 +1,3 @@
-# Your Project
+# ${artifactId}
+
+This is a new project

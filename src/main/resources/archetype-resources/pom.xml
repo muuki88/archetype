@@ -30,13 +30,13 @@
 
 	<scm>
 		<url>https://github.com/${groupId}/${artifactId}</url>
-		<connection>scm:git:git://github.com/${groupId}/${artifactId}.git</connection>
-		<developerConnection>scm:git:git@github.com:${groupId}/${artifactId}.git</developerConnection>
+		<connection>scm:git:git://github.com/${repository}.git</connection>
+		<developerConnection>scm:git:git@github.com:${repository}.git</developerConnection>
 	</scm>
 
 	<issueManagement>
 		<system>Github</system>
-		<url>https://github.com/${groupId}/${artifactId}/issues</url>
+		<url>https://github.com/${repository}/issues</url>
 	</issueManagement>
 
 	<build>
@@ -59,11 +59,6 @@
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>findbugs-maven-plugin</artifactId>
 				<version>${findbugs.version}</version>
-				<configuration>
-					<xmlOutput>true</xmlOutput>
-					<!-- Optional directory to put findbugs xdoc xml report -->
-					<xmlOutputDirectory>target/site/findbugs.report</xmlOutputDirectory>
-				</configuration>
 			</plugin>
 
 			<!-- Attached source.jar -->
@@ -125,7 +120,7 @@
 				<extensions>true</extensions>
 				<configuration>
 					<instructions>
-						<Export-Package>Jama.*</Export-Package>
+						<Export-Package>*</Export-Package>
 					</instructions>
 				</configuration>
 			</plugin>

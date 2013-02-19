@@ -17,7 +17,7 @@
 
 	<body>
 		<links>
-			<item name="Source Code" href="https://github.com/${groupId}/${artifactId}" />
+			<item name="Source Code" href="https://github.com/${repository}" />
 		</links>
 
 		<menu>
@@ -32,7 +32,7 @@
 		<fluidoSkin>
 			<sourceLineNumbersEnabled>true</sourceLineNumbersEnabled>
 			<gitHub>
-				<projectId>${groupId}/${artifactId}</projectId>
+				<projectId>${repository}</projectId>
 			</gitHub>
 		</fluidoSkin>
 	</custom>
