@@ -132,7 +132,7 @@
 				<artifactId>site-maven-plugin</artifactId>
 				<version>0.6</version>
 				<configuration>
-					<message>Creating site for ${version}</message>
+					<message>Creating site for ${project.version}</message>
 				</configuration>
 				<executions>
 					<execution>
